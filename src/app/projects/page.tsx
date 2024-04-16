@@ -10,7 +10,7 @@ const page = (props: Props) => {
     <div>
         <h1 className='text-4xl font-bold text-primary'>Latest projects</h1>
         <p className='text-lg'>Some code and bugs I‘ve made trying to put my dent in the universe.</p>
-        <div className='grid grid-cols-2 p-2 gap-10'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 p-2 gap-10'>
             {
                 projects && projects.map((item:Projects, index:number)=>(
                     <Link href={item.url} target='_blank' className='border-2 border-secondary rounded-md p-2'>

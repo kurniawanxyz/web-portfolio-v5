@@ -6,8 +6,8 @@ type Props = {}
 
 const Navigation = (props: Props) => {
   return (
-<nav className='w-full h-auto sticky top-1 flex items-center justify-center py-3 px-20'>
-    <div className='flex justify-center w-full group'>
+<nav className='z-[1000] w-full h-auto sticky top-1 flex items-center justify-center py-3 px-0 lg:px-20'>
+    <div className='flex justify-center group w-10/12 md:w-full'>
         <ul className='flex gap-5 border-2 border-secondary px-3 py-2 rounded-full group-hover:ring-1 group-hover:ring-secondary'>
             {link.map((nav: Link, i: number) => (
                 <NavigationLink

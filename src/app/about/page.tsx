@@ -8,10 +8,10 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div className='px-10'>
-        <div className='flex w-full'>
-            <div className='w-full'>
-                <div className='w-[96%]'>
+    <div className='lg:px-10'>
+        <div className='flex w-full flex-col-reverse lg:flex-row'>
+            <div className='w-full mt-5 lg:mt-0'>
+                <div className='w-full lg:w-[96%]'>
                     <h1 className='text-4xl font-bold text-primary'>About me</h1>
                     <p>Hi, I'm Adi Kurniawan a high school vocation student majoring in Software Engineering, a lifetime learner, and a Fullstack Web Developer based in Jawa Timur, Indonesia.</p>
                     <p>I am someone who is interested in the world of technology, linux operating systems and open source software development.</p>
@@ -30,7 +30,7 @@ const page = (props: Props) => {
         </div>
         <div className='mt-10'>
             <h2 className='text-4xl font-bold text-primary'>Skillset</h2>
-            <div className='grid grid-cols-3 gap-5 '>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 '>
                 <div className='border-accent border-2 p-2 rounded-md'>
                     <h3>Language</h3>
                     <div className='grid grid-cols-2 gap-2 mt-3 '>
@@ -65,7 +65,7 @@ const page = (props: Props) => {
         </div>
         <div>
             <h2 className='flex items-center gap-1 text-4xl font-bold text-primary mt-10'><HiMiniBuildingOffice2 /> Experience <hr className='w-full border-2 border-secondary' /></h2>
-            <div className='grid grid-cols-2 gap-5 mt-3'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-3'>
                     {
                         experience.map((item:Experience,index:number)=>(
                             <div key={index} className='border-secondary border-2 rounded-md p-2'>
@@ -79,7 +79,7 @@ const page = (props: Props) => {
         </div>
         <div>
             <h2 className='flex items-center gap-1 text-4xl font-bold text-primary mt-10'><FaSchool /> Education <hr className='w-full border-2 border-secondary' /></h2>
-            <div className='grid grid-cols-2 gap-5 mt-3'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 gap-5 mt-3'>
                     {
                         education.map((item:Education,index:number)=>(
                             <div key={index} className='border-secondary border-2 rounded-md p-2'>
