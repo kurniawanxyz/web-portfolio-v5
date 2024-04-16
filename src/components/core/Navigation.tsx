@@ -17,7 +17,8 @@ const Navigation = (props: Props) => {
           if (prevScrollpos > currentScrollPos) {
             setTop(0); // Show navbar
           } else {
-            setTop(-50); // Hide navbar
+            setTop(-50); // Hide navbar 
+            
           }
           setPrevScrollpos(currentScrollPos);
         };
