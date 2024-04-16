@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react'
 import { NavigationLink } from '../fragments'
 import { ThemeChangerButton } from '../elements'
-
 type Props = {}
 
 const Navigation = (props: Props) => {
@@ -13,12 +12,12 @@ const Navigation = (props: Props) => {
     useEffect(() => {
         // Function to handle scroll events
         const handleScroll = () => {
-          const currentScrollPos = window.pageYOffset;
+          const currentScrollPos = window && window.pageYOffset;
           if (prevScrollpos > currentScrollPos) {
             setTop(0); // Show navbar
           } else {
             setTop(-50); // Hide navbar 
-            
+
           }
           setPrevScrollpos(currentScrollPos);
         };
