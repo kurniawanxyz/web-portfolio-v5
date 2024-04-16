@@ -39,8 +39,8 @@ const link = [
         text: "About"
     },
     {
-        url: "/project",
-        text: "Project"
+        url: "/projects",
+        text: "Projects"
     },
     {
         url: "/contact",

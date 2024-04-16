@@ -1,6 +1,8 @@
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
 import React from 'react'
+import { HiMiniBuildingOffice2 } from "react-icons/hi2"
+import { FaSchool } from "react-icons/fa6"
 
 type Props = {}
 
@@ -29,9 +31,9 @@ const page = (props: Props) => {
         <div className='mt-10'>
             <h2 className='text-4xl font-bold text-primary'>Skillset</h2>
             <div className='grid grid-cols-3 gap-5 '>
-                <div className='border-accent border-2 p-2'>
+                <div className='border-accent border-2 p-2 rounded-md'>
                     <h3>Language</h3>
-                    <div className='grid grid-cols-2 gap-2 mt-3'>
+                    <div className='grid grid-cols-2 gap-2 mt-3 '>
                         {
                             language.map((item:string,i:number)=>(
                                 <Badge className='hover:bg-primary cursor-pointer hover:text-white' variant={"secondary"} key={i+"language"}>{item}</Badge>
@@ -39,9 +41,9 @@ const page = (props: Props) => {
                         }
                     </div>
                 </div>
-                <div className='border-accent border-2 p-2'>
+                <div className='border-accent border-2 p-2 rounded-md'>
                     <h3>Frontend</h3>
-                    <div className='grid grid-cols-2 gap-2 mt-3'>
+                    <div className='grid grid-cols-2 gap-2 mt-3 '>
                         {
                             frontend.map((item:string,i:number)=>(
                                 <Badge className='hover:bg-primary cursor-pointer hover:text-white' variant={"secondary"} key={i+"language"}>{item}</Badge>
@@ -49,9 +51,9 @@ const page = (props: Props) => {
                         }
                     </div>
                 </div>
-                <div className='border-accent border-2 p-2'>
+                <div className='border-accent border-2 p-2 rounded-md'>
                     <h3>Backend</h3>
-                    <div className='grid grid-cols-2 gap-2 mt-3'>
+                    <div className='grid grid-cols-2 gap-2 mt-3 '>
                         {
                             backend.map((item:string,i:number)=>(
                                 <Badge className='hover:bg-primary cursor-pointer hover:text-white' variant={"secondary"} key={i+"language"}>{item}</Badge>
@@ -61,8 +63,50 @@ const page = (props: Props) => {
                 </div>
             </div>
         </div>
+        <div>
+            <h2 className='flex items-center gap-1 text-4xl font-bold text-primary mt-10'><HiMiniBuildingOffice2 /> Experience <hr className='w-full border-2 border-secondary' /></h2>
+            <div className='grid grid-cols-2 gap-5 mt-3'>
+                    {
+                        experience.map((item:Experience,index:number)=>(
+                            <div key={index} className='border-secondary border-2 rounded-md p-2'>
+                                <h3 className='font-semibold text-primary'>{item.title}</h3>
+                                <p>{item.position}</p>
+                                <p>{item.years}</p>
+                            </div>
+                        ))
+                    }
+            </div>
+        </div>
+        <div>
+            <h2 className='flex items-center gap-1 text-4xl font-bold text-primary mt-10'><FaSchool /> Education <hr className='w-full border-2 border-secondary' /></h2>
+            <div className='grid grid-cols-2 gap-5 mt-3'>
+                    {
+                        education.map((item:Education,index:number)=>(
+                            <div key={index} className='border-secondary border-2 rounded-md p-2'>
+                                <h3 className='font-semibold text-primary'>{item.name}</h3>
+                                <p>{item.position}</p>
+                                <p>{item.major}</p>
+                                <p>{item.duration}</p>
+                            </div>
+                        ))
+                    }
+            </div>
+        </div>
     </div>
   )
+}
+
+type Experience ={
+    title: string,
+    position: string,
+    years: string
+}
+
+type Education = {
+    name: string,
+    position: string,
+    major: string,
+    duration: string
 }
 
 const language = [
@@ -70,11 +114,39 @@ const language = [
 ]
 
 const frontend = [
-    "React.JS","Next.JS","Tailwind CSS","ShadCn","Daisy UI"
+    "React.JS","Next.JS","Tailwind CSS","ShadCn","Daisy UI","Bootstrap 5","JQuery","Recoil.JS"
 ]
 
 const backend = [
     ".Net Framework","Laravel","Mysql","Postgresql","Sql Server","Adonis.JS"
+]
+
+const experience = [
+    {
+        title : "PT HUMMA TEKNOLOGI INDONESIA",
+        position : "Web Developer (Internship)",
+        years: "2023"
+    },
+    {
+        title : "PT HUMMA TEKNOLOGI INDONESIA",
+        position : "Software & App Developer (Training)",
+        years: "2024"
+    }
+]
+
+const education = [
+    {
+        name : "SMKN 1 MEJAYAN",
+        position: "Vocational High School",
+        major: "Rekayasa Perangkat Lunak",
+        duration: "2022-Present"
+    },
+    {
+        name : "SMPN 2 NGLAMES",
+        position: "Junior High School",
+        major: "-",
+        duration: "2019-2022"
+    },
 ]
 
 export default page
