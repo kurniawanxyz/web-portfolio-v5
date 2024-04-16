@@ -118,7 +118,7 @@ const frontend = [
 ]
 
 const backend = [
-    ".Net Framework","Laravel","Mysql","Postgresql","Sql Server","Adonis.JS"
+    "Asp.Net","Laravel","Mysql","Postgresql","Sql Server","Adonis.JS"
 ]
 
 const experience = [
