@@ -1,14 +1,17 @@
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
-import React from 'react'
 import { HiMiniBuildingOffice2 } from "react-icons/hi2"
 import { FaSchool } from "react-icons/fa6"
 
 type Props = {}
 
 const page = (props: Props) => {
+
   return (
     <div className='lg:px-10'>
+        <div className='fixed top-10'>
+          
+        </div>
         <div className='flex w-full flex-col-reverse lg:flex-row'>
             <div className='w-full mt-5 lg:mt-0'>
                 <div className='w-full lg:w-[96%]'>
