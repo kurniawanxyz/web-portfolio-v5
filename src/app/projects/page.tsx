@@ -86,7 +86,7 @@ const projects = [
         img: "/images/projects/fe_insting.png",
         description: "Website Instrumen Bimbingan Konseling yang memiliki beberapa tujuan, salah satunya instrumen yang digunakan untuk mendeteksi kecerdasan anak",
         url: "https://github.com/KaitoDeCode/insting",
-        category: ["Web","Development"],
+        category: ["Web","Sedang Development"],
         tech: [
             "Next JS",
             "Tailwind CSS",
@@ -98,7 +98,7 @@ const projects = [
         title: "Rumus Matematika",
         img: "/images/projects/rumus_matematika.png",
         description: "Package yang saya buat ketika waktu saya bosan.Package ini dibuat untuk menyelesaikan permasalahan dasar matematika lewat pemrograman",
-        url: "https://github.com/KaitoDeCode/SiPersa",
+        url: "https://www.npmjs.com/package/rumus_matematika",
         category: ["Package"],
         tech: [
            "Typescript",
