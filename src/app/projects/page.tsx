@@ -108,7 +108,7 @@ const projects = [
     {
         title: "BromoAirlines",
         img: "/images/projects/bromoairlines.png",
-        description: "Web management pembelajaran untuk tracking proses pembelajaran",
+        description: "Software hasil latihan untuk mengikuti lomba",
         url: "https://github.com/KaitoDeCode/BromoAirlines",
         category: ["Software"],
         tech: [
