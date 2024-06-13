@@ -54,9 +54,10 @@ jobs:
           username: admin@kaitodecode.com
           password: Cr3P4kv5FBLa
           local-dir: ./
-          server-dir: ./public_html/kaitodecode.com
+          server-dir: ./kaitodecode.com
           exclude: |
             **/.git*
             **/node_modules/**
             **/.*.swp
+            **/build/**
             **/src/**
