@@ -50,9 +50,9 @@ jobs:
       - name: Deploy to shared hosting
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
-          server: ftp.kaitodecode.com
-          username: kaitodecode
-          password: b8f4fbcf2a7ab8
+          server: kaitodecode.com
+          username: admin@kaitodecode.com
+          password:  b8f4fbcf2a7ab8
           local-dir: ./_build
           server-dir: /
           clean: true
@@ -60,4 +60,5 @@ jobs:
             **/.git*
             **/node_modules/**
             **/.*.swp
+          next-config: ./next.config.mjs
 
