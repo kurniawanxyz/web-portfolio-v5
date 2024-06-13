@@ -59,5 +59,4 @@ jobs:
             **/.git*
             **/node_modules/**
             **/.*.swp
-            **/build/**
             **/src/**
