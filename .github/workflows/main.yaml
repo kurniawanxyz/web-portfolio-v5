@@ -28,6 +28,6 @@ jobs:
         ftp_username: adi@kaitodecode.com
         ftp_password: 6DZSEJVnd7E1231231
         local_source_dir: "out"
-        dist_target_dir: "www/kaitodecode.com"
+        dist_target_dir: "./"
         delete: "true"
         exclude: "'^logs/' '^README.md'"  
