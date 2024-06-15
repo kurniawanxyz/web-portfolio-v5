@@ -17,7 +17,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name : build
-      run: npm run build
+      run: |
+        npm install
+        npm run build
 
     - name: FTP DEPLOY
       uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
@@ -25,8 +27,7 @@ jobs:
         ftp_host: kaitodecode.com
         ftp_username: adi@kaitodecode.com
         ftp_password: 6DZSEJVnd7E1231231
-        local_source_dir: "out/*"
+        local_source_dir: "./out/*"
         dist_target_dir: "./"
         delete: "true"
         exclude: "'^logs/' '^README.md'"  
-
