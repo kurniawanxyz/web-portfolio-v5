@@ -25,8 +25,8 @@ jobs:
       uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
       with:
         ftp_host: kaitodecode.com
-        ftp_username: admin@kaitodecode.com
-        ftp_password: b8f4fbcf2a7ab8
+        ftp_username: adi@kaitodecode.com
+        ftp_password: 6DZSEJVnd7E1231231
         local_source_dir: "out"
         dist_target_dir: "www/kaitodecode.com"
         delete: "true"
